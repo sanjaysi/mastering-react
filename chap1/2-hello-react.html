@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello React</title>
+	<script src="https://unpkg.com/react@15.3.1/dist/react.js"></script>
+	<script src="https://unpkg.com/react-dom@15.3.1/dist/react-dom.js"></script>
+</head>
+<body>
+
+<script>
+	var HelloReact = React.createClass({
+		render: function() {
+			return React.DOM.h1(null, 'Hello React');
+        }
+	});
+
+	ReactDOM.render(React.createElement(HelloReact), document.body);
+
+</script>
+
+</body>
+</html>
