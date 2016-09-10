@@ -52,9 +52,9 @@ class HelloApp extends Component {
 		this.state = {firstName: 'fname', lastName: 'lname'};
 		this.update = this.update.bind(this);
 	}
-	update(key, value) {
+	update(name, value) {
 		let newState = {};
-		newState[key] = value;
+		newState[name] = value;
 		this.setState(newState);
 	}
 	render() {
