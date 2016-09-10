@@ -32,7 +32,7 @@ class MultipleProps extends React.Component {
     return(
       <div>
         <div>Hello: {fname} {lname}</div>
-        <div>Message: {this.state.message}</div>
+        <div>Message: <h2>{this.state.message}</h2></div>
         <input
           type='text'
           onChange={this.updateMessage} />
