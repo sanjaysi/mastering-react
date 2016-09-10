@@ -35,9 +35,12 @@ class TextBox extends Component {
 			<div>
 				<label>{this.props.label}</label>
 				<input type='text' disabled={this.state.isEdit} ref='messageTextBox'/>
-				<button type='button' onClick={this.state.isEdit ? this.edit : this.update} ref={'btn' + this.props.ref}>
-					{this.state.isEdit ? 'Edit' : 'Update'}
-				</button>
+				{
+					this.state.isEdit ? 
+						<button onClick={this.edit}>Edit</button>
+						:
+						<button onClick={this.update}>Update</button>
+				}
 			</div>
 		);
 	}	
