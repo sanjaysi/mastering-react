@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Button } from 'react-bootstrap';
 
 class Message extends Component {
 	render() {
@@ -11,9 +12,9 @@ class Message extends Component {
 class MyButton extends Component {
     render() {
         return (
-            <button onClick={this.props.onClick}>
-            {this.props.children}
-            </button>
+            <Button bsStyle="success" onClick={this.props.onClick}>
+                {this.props.children}
+            </Button>
         );
     }
 }
